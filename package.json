@@ -1,0 +1,13 @@
+{
+  "name": "tw_scripts",
+  "version": "1.0.0",
+  "description": "Scripts de automação para o jogo Tribal Wars",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/tw": "github:tw-framework/types"
+  }
+}
