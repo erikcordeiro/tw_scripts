@@ -1,5 +1,5 @@
 export class StorageService {
-  key_prefix = 'tw_';
+  private readonly key_prefix: string = 'twscripts_';
   private storage: Storage;
   
   constructor() {
