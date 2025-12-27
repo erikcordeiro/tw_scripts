@@ -1,1 +1,16 @@
 node_modules/*
+
+# Build outputs (dist/ is tracked for GitHub Pages until CI/CD is set up)
+# dist/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+
+# IDE
+.vscode/
+
+# Webpack cache
+.webpack/

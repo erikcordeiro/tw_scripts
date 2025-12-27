@@ -2,13 +2,14 @@
   "compilerOptions": {
     "target": "ES2020",
     "lib": ["DOM", "ES2020"],
-    "module": "commonjs",
+    "module": "ESNext",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "types": ["tw"]
+    "types": ["tw"],
+    "moduleResolution": "node"
   },
   "include": [
     "src/**/*"
