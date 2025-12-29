@@ -1,6 +1,8 @@
+import { UI, GameData } from "../shared/types/tw";
 import { StorageService } from "../shared/services/storageService";
 
-declare const UI: any;
+declare const UI: UI;
+declare const game_data: GameData;
 
 // Script de automação de coleta para o jogo Tribal Wars
 // Autor: Éric N. Cordeiro
@@ -10,15 +12,19 @@ declare const UI: any;
 
 // Função principal de automação de coleta
 function autoScavenge() {
-  scavenge();
+  if (game_data.screen === "scavenge") {
+    scavenge();
+  } else {
+    UI.ErrorMessage("Este script só pode ser executado na tela de coleta.");
+  }
 }
 
 // Função para realizar a coleta
 function scavenge() {
   UI.SuccessMessage("Iniciando a coleta automática...");
   
-  const storageService = new StorageService();
-  storageService.setItem("autoScavengeActive", true);
+  // const storageService = new StorageService();
+  // storageService.setItem("autoScavengeActive", true);
 }
 
 autoScavenge();

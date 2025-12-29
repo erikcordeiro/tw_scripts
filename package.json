@@ -9,7 +9,6 @@
     "clean": "rm -rf dist"
   },
   "devDependencies": {
-    "@types/tw": "github:tw-framework/types",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
     "webpack": "^5.104.1",
