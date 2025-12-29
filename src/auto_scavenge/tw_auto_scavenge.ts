@@ -28,6 +28,6 @@ function scavenge() {
 }
 
 function isScavengeScreen(): Boolean {
-  return window.location.href.indexOf('screen=place&mode=scavenge') < 0;
+  return window.location.href.indexOf('screen=place&mode=scavenge') >= 0;
 }
 autoScavenge();
