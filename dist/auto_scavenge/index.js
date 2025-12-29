@@ -1,1 +1,1 @@
-(()=>{"use strict";"scavenge"===game_data.screen?UI.SuccessMessage("Iniciando a coleta automática..."):UI.ErrorMessage("Este script só pode ser executado na tela de coleta.")})();
+(()=>{"use strict";window.location.href.indexOf("screen=place&mode=scavenge")<0?UI.SuccessMessage("Iniciando a coleta automática..."):UI.ErrorMessage("Este script só pode ser executado na tela de coleta.")})();

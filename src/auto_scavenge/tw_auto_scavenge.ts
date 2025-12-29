@@ -12,7 +12,7 @@ declare const game_data: GameData;
 
 // Função principal de automação de coleta
 function autoScavenge() {
-  if (game_data.screen === "scavenge") {
+  if (isScavengeScreen()) {
     scavenge();
   } else {
     UI.ErrorMessage("Este script só pode ser executado na tela de coleta.");
@@ -27,4 +27,7 @@ function scavenge() {
   // storageService.setItem("autoScavengeActive", true);
 }
 
+function isScavengeScreen(): Boolean {
+  return window.location.href.indexOf('screen=place&mode=scavenge') < 0;
+}
 autoScavenge();
