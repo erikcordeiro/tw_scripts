@@ -22,6 +22,6 @@ module.exports = {
   },
   mode: 'production',
   optimization: {
-    minimize: true, // Para userscript, manter legível
+    minimize: false, // Para userscript, manter legível
   },
 };

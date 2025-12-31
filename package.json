@@ -6,9 +6,11 @@
   "scripts": {
     "build": "webpack",
     "rebuild": "npm run clean && webpack",
-    "clean": "rm -rf dist"
+    "clean": "rimraf dist"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.33",
+    "rimraf": "^5.0.10",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
     "webpack": "^5.104.1",

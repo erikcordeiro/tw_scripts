@@ -18,4 +18,8 @@ export class StorageService {
   removeItem(key: string) {
     this.storage.removeItem(this.key_prefix + key);
   }
+
+  hasItem(key: string): boolean {
+    return this.storage.getItem(this.key_prefix + key) !== null;
+  }
 }
